@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="dsh-plugin-butler">
+  <rect x="13" y="17" width="102" height="94" rx="18" fill="none" stroke="#5B6CFF" stroke-width="7"/>
+  <line x1="36" y1="48" x2="92" y2="48" stroke="#5B6CFF" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
+  <line x1="36" y1="80" x2="92" y2="80" stroke="#5B6CFF" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
+  <circle cx="52" cy="48" r="10" fill="#5B6CFF"/>
+  <circle cx="80" cy="80" r="10" fill="#5B6CFF"/>
+</svg>
