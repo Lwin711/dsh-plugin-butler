@@ -60,6 +60,23 @@ DSH 的 Host 侧没有 `shutdown` / `exit` 事件，`setPluginEnabled` 只有「
 
 状态保存在 `%DSH_HOME%\butler\state.json`（模式、常驻列表、本次租约），写入走临时文件 + `rename`。
 
+## 发版
+
+推送走 SSH 密钥（`~/.ssh/id_ed25519`，已注册到 GitHub 账号），不需要每次准备 token：
+
+```powershell
+# 1. 升版本 → 2. 打包 → 3. 推 tag → 4. 建 Release 传包体
+cd dsh-plugin-butler
+npm version patch --no-git-tag-version
+npm pack --pack-destination ..\.tools\dist --cache ..\.tools\npm-cache
+cd ..
+git add -A; git commit -m "chore: v0.2.1"
+git tag v0.2.1; git push origin main --tags
+gh release create v0.2.1 .tools\dist\dsh-plugin-butler-0.2.1.tgz --title v0.2.1
+```
+
+升级侧只要重新执行一次 `plugin_manager install_bundle(target=<新 tarball 地址>)`。
+
 ## 许可
 
 [MIT](LICENSE)。
