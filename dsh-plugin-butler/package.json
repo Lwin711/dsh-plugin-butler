@@ -1,7 +1,6 @@
 {
   "name": "dsh-plugin-butler",
   "version": "0.2.0",
-  "private": true,
   "type": "module",
   "description": "Plugin butler: one switchboard for every DSH plugin, with a lean startup policy that folds the rest away when DSH starts again.",
   "license": "MIT",
@@ -35,6 +34,10 @@
     "locale",
     "README.md"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
