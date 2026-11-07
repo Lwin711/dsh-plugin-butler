@@ -5,6 +5,22 @@
   "type": "module",
   "description": "Plugin butler: one switchboard for every DSH plugin, with a lean startup policy that folds the rest away when DSH starts again.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lwin711/dsh-plugin-butler.git",
+    "directory": "dsh-plugin-butler"
+  },
+  "homepage": "https://github.com/Lwin711/dsh-plugin-butler#readme",
+  "bugs": {
+    "url": "https://github.com/Lwin711/dsh-plugin-butler/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "bundle",
+    "cordis"
+  ],
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",

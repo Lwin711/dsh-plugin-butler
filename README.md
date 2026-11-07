@@ -3,6 +3,12 @@
 给 [DeepSeek Harness](https://github.com/deepseek-ai) 用的插件管家：一份清单、一列开关、一套启动策略，
 把「每次冷启动要加载哪些插件」变成可切换的模式，并在设置页里直接管理。
 
+仓库地址：<https://github.com/Lwin711/dsh-plugin-butler>
+
+```powershell
+git clone https://github.com/Lwin711/dsh-plugin-butler.git
+```
+
 插件本体与自测代码分居两个目录：
 
 ```
@@ -49,4 +55,4 @@ DSH 的 Host 侧没有 `shutdown` / `exit` 事件，`setPluginEnabled` 只有「
 
 ## 许可
 
-未声明许可证（All rights reserved）。如需开源，请补充 `LICENSE`。
+[MIT](LICENSE)。
