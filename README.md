@@ -27,10 +27,17 @@ dsh-plugin-butler/   npm 包本体（Host 路由 + 客户端设置页 + 文案�
 
 ## 安装
 
-包还没有发布到 npm，用本地目录安装：
+从 GitHub Release 的 tarball 安装（推荐，脱离本地目录，装完源码目录可以随便删）：
+
+```
+plugin_manager install_bundle(target=https://github.com/Lwin711/dsh-plugin-butler/releases/download/v0.2.0/dsh-plugin-butler-0.2.0.tgz)
+```
+
+要在 DSH 设置页里点装，就下载同一个 tarball 后用「安装本地文件」选它。
+
+也可以从源码目录安装 —— 注意这种装法在 profile 里留下的是 `link:`，删掉源码目录插件就失效：
 
 ```powershell
-# 从源码目录安装进当前 profile，并启用为 bundle
 plugin_manager install_bundle(target=<仓库路径>\dsh-plugin-butler)
 ```
 

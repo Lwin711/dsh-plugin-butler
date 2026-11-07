@@ -2,6 +2,19 @@
 
 一个控制台，管理 DSH 里的全部插件：一份清单、一列开关、一套启动策略。
 
+## 安装
+
+从 GitHub Release 的 tarball 安装，装进 profile 的是真实副本，源码目录可以删：
+
+```
+plugin_manager install_bundle(target=https://github.com/Lwin711/dsh-plugin-butler/releases/download/v0.2.0/dsh-plugin-butler-0.2.0.tgz)
+```
+
+用本地目录安装会在 profile 里留下 `link:`，删掉源码目录插件就失效（包里会出现
+`availability: "missing"`）——那种装法只适合改代码时用。
+
+装好后重启 DSH，在 **设置 → 插件管家** 打开面板。
+
 ## 它解决什么
 
 DSH 的插件层是启动时一次性挂载的。第三方插件越多，每次冷启动要加载的模块就越多。
